@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JARVIS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Canvas -->
+  <canvas id="jarvisCanvas"></canvas>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Navbar -->
+  <nav>
+
+    <div class="logo">JARVIS</div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+
+      <li>
+        <a href="#" onclick="openLogin()">Login</a>
+      </li>
+
+      <li>
+        <a href="#" onclick="openSignup()">Signup</a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+
+    <h1>WELCOME TO JARVIS</h1>
+
+    <p>
+      Futuristic AI interface with particle animation.
+    </p>
+
+    <div class="buttons">
+
+      <button class="login-btn" onclick="openLogin()">
+        Login
+      </button>
+
+      <button class="signup-btn" onclick="openSignup()">
+        Signup
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- Login Popup -->
+  <div class="popup" id="loginPopup">
+
+    <span class="close" onclick="closePopup()">
+      &times;
+    </span>
+
+    <h2>Login</h2>
+
+    <input type="email" placeholder="Email">
+
+    <input type="password" placeholder="Password">
+
+    <button>Login</button>
+
+  </div>
+
+  <!-- Signup Popup -->
+  <div class="popup" id="signupPopup">
+
+    <span class="close" onclick="closePopup()">
+      &times;
+    </span>
+
+    <h2>Signup</h2>
+
+    <input type="text" placeholder="Name">
+
+    <input type="email" placeholder="Email">
+
+    <input type="password" placeholder="Password">
+
+    <button>Create Account</button>
+
+  </div>
+
+  <!-- IMPORTANT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
